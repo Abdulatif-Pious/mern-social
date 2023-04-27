@@ -54,14 +54,14 @@ app.use('/users', userRoutes);
 app.use('/posts', postsRoutes);
 
 /* MONGOOSE SETUP  */
-const port = process.env.PORT || 6001;
+const PORT = process.env.PORT || 6001;
 mongoose  
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    app.listen("https://mern-social-server-rlhu.onrender.com", () => console.log(`server port: https://mern-social-server-rlhu.onrender.com`));
+    app.listen(PORT, () => console.log(`server port: ${PORT}`));
   })
   .catch((error) => console.log(`${error} did not connect`));
 
