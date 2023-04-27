@@ -48,19 +48,20 @@ app.post("/posts", verifyToken, upload.single("picture"), createPost);
 
 /* ROUTES */
 
+
 app.use('/auth', authRoutes);
 app.use('/users', userRoutes);
 app.use('/posts', postsRoutes);
 
 /* MONGOOSE SETUP  */
-const PORT = process.env.PORT || 6001;
+const port = process.env.PORT || 6001;
 mongoose  
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    app.listen(PORT, () => console.log(`server port: ${PORT}`));
+    app.listen(port, () => console.log(`server port: ${port}`));
   })
   .catch((error) => console.log(`${error} did not connect`));
 
