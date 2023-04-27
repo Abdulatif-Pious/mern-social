@@ -94,7 +94,6 @@ const Login = () => {
         dispatch(
           setLogin({
             user: response.data.user,
-            // token: response.data.token,
           })
         )
         navigate("/");
