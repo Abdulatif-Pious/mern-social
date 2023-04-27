@@ -61,7 +61,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    app.listen("https://mern-social-server-rlhu.onrender.com", () => console.log(`server port: ${port}`));
+    app.listen("https://mern-social-server-rlhu.onrender.com", () => console.log(`server port: https://mern-social-server-rlhu.onrender.com`));
   })
   .catch((error) => console.log(`${error} did not connect`));
 
