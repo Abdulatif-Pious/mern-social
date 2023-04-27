@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 import Login from './pages/Login';
 import Home from "./pages/Home";
-import UserId from './pages/profile/UserId';
+import UserId from './pages/profile/userId';
 import { themeSettings } from './theme';
 
 const App = () => {
