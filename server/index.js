@@ -9,6 +9,7 @@ import morgan from 'morgan';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+
 import { register } from './controllers/auth.js'
 import { createPost } from './controllers/posts.js';
 import { verifyToken } from './middleware/auth.js';
@@ -61,3 +62,4 @@ mongoose
     app.listen(PORT, () => console.log(`server port: ${PORT}`));
   })
   .catch((error) => console.log(`${error} did not connect`));
+
