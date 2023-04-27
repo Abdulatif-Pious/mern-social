@@ -22,7 +22,7 @@ import {  useSelector, useDispatch } from 'react-redux';
 import axios from 'axios'
 
 import Wrapper from '../Wrapper';
-import  UserImage  from '../userImage';
+import  UserImage  from '../UserImage';
 import { setPosts } from '../../state/features/authSlice';
 
 
