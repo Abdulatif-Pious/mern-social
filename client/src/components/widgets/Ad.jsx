@@ -4,8 +4,6 @@ import Wrapper from '../Wrapper';
 
 const Add = () => {
   const { palette } = useTheme();
-  
-  // com
 
   return (
     <Wrapper>
