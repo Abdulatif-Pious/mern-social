@@ -6,7 +6,7 @@ import { getAllPosts, getUserPosts, handleLike } from '../controllers/posts.js';
 const router = express.Router();
 
 // READ;
-router.get("/", verifyToken, getAllPosts);
+router.get("/",  getAllPosts);
 router.get('/:userId/posts', verifyToken, getUserPosts);
 
 // UPDATE
